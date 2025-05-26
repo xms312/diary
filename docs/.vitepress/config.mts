@@ -2,27 +2,32 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "sensen的学习日记",
-  description: "一个用来记录学习日记的网站",
+  title: "没想好标题",
+  description: "这个人很懒，没有什么介绍！",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '介绍', link: '/decoration' },
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'DECORATION',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '介绍', link: '/decoration' },
+        ]
+      },
+      {
+        text: 'STUDY',
+        items: [
+          { text: '学习', link: '/study' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/xms312/diary' }
     ]
   }
 })
