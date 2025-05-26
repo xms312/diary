@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "没想好标题",
   description: "这个人很懒，没有什么介绍！",
-    base: '/diary/',
+    base: '/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
