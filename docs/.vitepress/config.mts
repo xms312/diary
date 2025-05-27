@@ -16,10 +16,12 @@ export default defineConfig({
     sidebar: [
       {
         text: "DECORATION",
+        collapsed: true,
         items: [{ text: "介绍", link: "/decoration" }],
       },
       {
         text: "STUDY",
+        collapsed: true,
         items: [...studys],
       },
     ],
