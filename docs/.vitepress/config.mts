@@ -1,36 +1,29 @@
-import { defineConfig } from 'vitepress'
-
+import { defineConfig } from "vitepress";
+import { studys } from "../routes";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "没想好标题",
   description: "这个人很懒，没有什么介绍！",
-    base: '/',
-    lastUpdated: true, // ✅ 启用更新时间
+  base: "/",
+  lastUpdated: true, // ✅ 启用更新时间
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' },
-      { text: '介绍', link: '/decoration' },
-      { text: '进度', link: '/step' },
+      { text: "主页", link: "/" },
+      { text: "介绍", link: "/decoration" },
     ],
 
     sidebar: [
       {
-        text: 'DECORATION',
-        items: [
-          { text: '介绍', link: '/decoration' },
-        ]
+        text: "DECORATION",
+        items: [{ text: "介绍", link: "/decoration" }],
       },
       {
-        text: 'STUDY',
-        items: [
-          { text: '学习', link: '/study' },
-        ]
-      }
+        text: "STUDY",
+        items: [...studys],
+      },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/xms312/diary' }
-    ]
-  }
-})
+    socialLinks: [{ icon: "github", link: "https://github.com/xms312/diary" }],
+  },
+});

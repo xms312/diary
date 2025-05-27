@@ -11,8 +11,8 @@ hero:
       text: 介绍
       link: /decoration
     - theme: alt
-      text: 进度
-      link: /step
+      text: 学习
+      link: /study/1
 
 # features:
 #   - title: Feature A
